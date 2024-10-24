@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: -0.5px;
+  font-family: "Inter";
+}
+
+.card-container {
+  width: 100%;
+  margin: 2rem auto; 
+  padding: 1.5rem;
+  border-bottom: 1px solid #c5c5c5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: #fff; 
+  border-radius: 1rem; 
+}
+
+.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 20px; 
+  margin: 2rem; 
+}
+
+.list-view {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+  margin: 2rem; 
+}
+
+.item-title-container h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.item-description-container p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.item-price-container h3 {
+  font-size: 1.25rem;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .grid-view {
+      grid-template-columns: 1fr; 
+  }
+
+  .list-view {
+      gap: 10px; 
+  }
+
+  .card-container {
+      width: 90%; 
+      margin: 1.5rem auto; 
+  }
+}
